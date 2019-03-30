@@ -1,6 +1,4 @@
-bin
-out
-.metadata
+/bin/
 .idea
 .vscode
 .DS_Store
