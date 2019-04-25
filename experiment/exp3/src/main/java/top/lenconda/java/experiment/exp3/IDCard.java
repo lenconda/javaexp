@@ -1,13 +1,8 @@
 package top.lenconda.java.experiment.exp3;
-import jdk.nashorn.internal.objects.NativeJSON;
-import jdk.nashorn.internal.parser.JSONParser;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
 
 public class IDCard {
 
