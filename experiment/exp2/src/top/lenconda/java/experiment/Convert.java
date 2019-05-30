@@ -15,10 +15,15 @@ public class Convert {
         this.input = input;
     }
 
+    // 获取中文名称
     public String getChineseAmount() {
+        // 声明转换工具类
         ConvertUtil util = new ConvertUtil(input);
+        // 获取整数部分
         String integerPart = util.getIntegerPart();
+        // 获取小数部分
         String decimalPart = util.getDecimalPart();
+        // 遇上多个零的处理逻辑
         if (integerPart != "0") {
             boolean flag = false;
             for (int i = 0; i < integerPart.length(); i++) {

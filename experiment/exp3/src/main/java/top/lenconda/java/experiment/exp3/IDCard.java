@@ -95,8 +95,10 @@ public class IDCard {
         return birthday.getString();
     }
 
+    // 获取省份名称
     public String getProvinceName () throws IOException {
         String province = this.idBuffer.substring(0, 2);
+        // 加载省份的JSON文件
         JSONLoader provincesJsonLoader = new JSONLoader("src/main/java/top/lenconda/java/experiment/exp3/provinces.json");
         JSONArray provinces = provincesJsonLoader.loadJsonArray();
         for (int i = 0; i < provinces.length(); i++) {
@@ -107,8 +109,10 @@ public class IDCard {
         return "";
     }
 
+    // 获取城市名称
     public String getCityName () throws IOException {
         String city = this.idBuffer.substring(0, 4);
+        // 加载城市的JSON文件
         JSONLoader citiesJsonLoader = new JSONLoader("src/main/java/top/lenconda/java/experiment/exp3/cities.json");
         JSONArray cities = citiesJsonLoader.loadJsonArray();
         for (int i = 0; i < cities.length(); i++) {
